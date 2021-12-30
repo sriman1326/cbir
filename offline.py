@@ -2,7 +2,6 @@ from PIL import Image
 from feature_extractor import FeatureExtractor
 from pathlib import Path
 import numpy as np
-
 if __name__ == '__main__':
     fe = FeatureExtractor()
 
