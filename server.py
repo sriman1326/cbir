@@ -22,7 +22,7 @@ def index():
     if request.method == 'POST':
         file = request.files['query_img']
 
-        # Save query image
+       # Save query image
         img = Image.open(file.stream)  # PIL image
         uploaded_img_path = "static/uploaded/" + datetime.now().isoformat().replace(":", ".") + "_" + file.filename
         img.save(uploaded_img_path)
